@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #243047;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.85), transparent 30%),
+    linear-gradient(135deg, #dff6ff, #eee7ff 55%, #ffe6f2);
+}
+
+.welcome-card {
+  width: min(100%, 520px);
+  padding: 48px 36px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  border-radius: 28px;
+  box-shadow: 0 24px 70px rgba(62, 72, 119, 0.18);
+  backdrop-filter: blur(12px);
+}
+
+.welcome-icon {
+  display: grid;
+  width: 72px;
+  height: 72px;
+  margin: 0 auto 20px;
+  place-items: center;
+  font-size: 38px;
+  background: #fff0c7;
+  border-radius: 22px;
+  transform: rotate(-4deg);
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  color: #6b4eff;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2rem, 8vw, 3.25rem);
+  line-height: 1.08;
+  letter-spacing: -0.04em;
+}
+
+.message {
+  max-width: 400px;
+  margin: 20px auto 28px;
+  color: #657087;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.button {
+  display: inline-block;
+  padding: 13px 24px;
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+  background: #6b4eff;
+  border-radius: 999px;
+  box-shadow: 0 10px 24px rgba(107, 78, 255, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 30px rgba(107, 78, 255, 0.38);
+}
+
+.button:focus-visible {
+  outline: 3px solid #ffb84d;
+  outline-offset: 4px;
+}
+
+@media (max-width: 480px) {
+  .welcome-card {
+    padding: 38px 24px;
+    border-radius: 22px;
+  }
+}
